@@ -1,0 +1,324 @@
+*
+{
+    padding: 0;
+    margin: 0; 
+    box-sizing: border-box; 
+}
+/* Global */
+body{
+    font-family: Montserrat;
+}
+.container{
+    width: 80%;
+    height: 500px;
+    margin: 0 auto;
+}
+.row::after{
+    clear: both;
+    display: table;
+    content: ""; 
+}
+[class*="col-"]{
+    float: left;
+    padding: 10px;
+
+}
+.col-1{width: 8.33%;}
+.col-2{width: 16.66%;}
+.col-3{width: 25%;}
+.col-4{width: 33.33%;}
+.col-5{width: 41.66%;}
+.col-6{width: 50%;}
+.col-7{width: 58.33%;}
+.col-8{width: 66.66%;}
+.col-9{width: 75%;}
+.col-10{width: 83.33%;}
+.col-11{width: 91.66%;}
+.col-12{width: 100%;}
+/* Nav */
+nav{
+    background: black;
+    height: 50px;
+    position: fixed;
+    width: 100%;
+}
+nav ul{
+    margin-top: 15px;
+}
+nav ul li{
+    list-style: none;
+    display: inline;
+    padding-left: 15px;
+}
+nav ul li a{
+    padding: 10px 20px;
+    font-size: 16px;
+    text-decoration: none;
+    color: white;
+    text-transform: uppercase;
+    border-radius: 5px;
+}
+nav ul li a:hover{
+    background: #F9E79F;
+    transition: all 1s ease-in-out;
+    color: #1C2833;
+    font-weight: bold;
+}
+/* Header */
+.header{
+    height: 800px;
+    width: 100%;
+    border: solid;
+    background: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.3)), url('./image/girl.jpeg');
+    background-position: center;
+    background-size: 100% 100%;
+}
+.header .mid-txt h3{
+    color: white;
+    margin-top: 700px;
+    text-align: center;
+    font-size: 20px;
+}
+.header .mid-txt p{
+    color: white;
+    margin-top: 20px;
+    text-align: center;
+    font-size: 16px;
+}
+/* Content */
+.content{
+    background: white;
+    height: 700px;
+    width: 100%;
+}
+.mid-title{
+    text-align: center;
+    margin-top: 80px;
+}
+.mid-title h2{
+    font-size: 35px;
+    padding-bottom: 20px;
+}
+.mid-title p{
+    color: #566573;
+    font-size: 17px;
+}
+.mid-title .mid-par {
+    padding-top: 25px;
+}
+.mid-title .mid-par p{
+    color: black;
+    font-size: 16px;
+    text-align: start;
+}
+.img{
+    height: 160px;
+    margin-top: 30px;
+    margin-left: 15px;
+    margin-right: 15px;
+    border-radius: 5px;
+}
+#img1{
+    background: url('./image/1.jpeg');
+    background-size: cover;
+    background-position: center;
+}
+#img2{
+    background: url('./image/bandmember.jpg');
+    background-size: cover;
+    background-position: center;
+}
+#img3{
+    background: url('./image/3.jpeg');
+    background-size: cover;
+    background-position: center;
+}
+.mid-text{
+    text-align: center;
+    margin-top: 15px;
+    font-size: 12px;
+}
+/* Content-2 */
+.content-2{
+    background: black;
+    height: 850px;
+    width: 100%;
+}
+.mid-title-2{
+    text-align: center;
+    color: white;
+    margin-top: 60px;
+}
+.mid-title-2 h2{
+    font-size: 35px;
+    padding-bottom: 25px;
+}
+.months{
+    height: 150px;
+    margin-top: 20px;
+    background: white;
+    border-radius: 5px;
+}
+.month h4{
+    font-size: 14px;
+    padding: 15px 10px 15px 20px;
+}
+.month span{
+    font-size: 12px;
+    color: white;
+    background: #A93226;
+    padding: 2px 5px;
+    margin-left: 10px;
+    border-radius: 5px;
+}
+#month-1{
+    height: 50px;
+}
+#month-2{
+    height: 50px;
+    border-top: #ccc solid .5px;
+    border-bottom: #ccc solid .5px;
+}
+#month-3{
+    height: 50px;
+}
+.info{
+    height: 450px;
+    margin-top: 20px;
+    background: white;
+    border-radius: 5px;
+}
+.image{
+    height: 250px;
+}
+#image-1{
+    background: url('./image/tour1.jpeg');
+    background-position: center;
+    background-size: cover;
+}
+#image-2{
+    background: url('./image/tour2.jpeg');
+    background-position: center;
+    background-size: cover;
+}
+#image-3{
+    background: url('./image/tour3.jpeg');
+    background-position: center;
+    background-size: cover;
+}
+.txt-info{
+    padding: 10px;
+}
+.txt-info h3{
+    font-size: 18px;
+    padding-bottom: 10px;
+}
+.txt-info p{
+    font-size: 16px;
+    padding-bottom: 20px;
+}
+.txt-info span{
+    font-style: italic;
+    font-size: 16px;
+}
+.txt-info .btn{
+    margin-top: 5px;
+    padding: 10px;
+    text-align: center;
+    border-radius: 5px;
+    background: #D5DBDB;
+    border-radius: 5px;
+}
+.txt-info .btn a{
+    text-decoration: none;
+    color: #1C2833;
+    font-size: 17px;
+    font-weight: bold;
+}
+.txt-info .btn:hover{
+    background: #A93226;
+    transition: all 1s ease-in-out;
+}
+.txt-info .btn a:hover{
+    color: white;
+    transition: all 1s ease-out;
+}
+/* Content-3 */
+.content-3{
+    height: 450px;
+    width: 100%;
+    background: white;
+}
+.mid-title-3{
+    text-align: center;
+    margin-top: 60px;
+}
+.mid-title-3 h2{
+    font-size: 35px;
+    padding-bottom: 20px;
+}
+.mid-title-3 p{
+    color: #566573;
+    font-size: 15px;
+    font-style: italic;
+}
+.icon-1{
+    text-align: center;
+    font-size: 14px;
+    padding-bottom: 5px;
+    margin-top: 10px;
+}
+.icon-1 i{
+    padding-right: 10px;
+}
+.form{
+    height: 200px;
+}
+.name input{
+    text-align: center;
+    padding: 14px 9px;
+    border-radius: 5px;
+    border: 0.5px solid #ccc;
+}
+.email input{
+    text-align: center;
+    padding: 14px 9px;
+    border-radius: 5px;
+    border: 0.5px solid #ccc;
+}
+.msg{
+    margin-left: 97px;
+}
+.msg input{
+    padding: 13px 90px;
+    border-radius: 5px;
+    border: 0.5px solid #ccc;
+    font-size: 16px;
+    text-align: center;
+}
+.button{
+    margin-top: 5px;
+}
+.button a{
+    padding: 10px 20px;
+    border-radius: 5px;
+    background: #D5DBDB;
+    color: #1C2833;
+    border: 0.5px solid #ccc;
+    text-decoration: none;
+}
+.button a:hover{
+    background: #A93226;
+    transition: all 1s ease-in-out;
+    color: white;
+}
+/* Footer */
+.footer{
+    height: 100px;
+    background: #D6DBDF;
+}
+.footer footer{
+    text-align: center;
+    margin-top: 35px;
+}
+
